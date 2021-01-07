@@ -32,6 +32,15 @@ namespace vectorBackend.Controllers
         {
             return View();
         }
+        [HttpGet]
+        // public string List()
+        // {
+        //     return "Hi there";
+        // }
+        public IActionResult List()
+        {
+            return View();
+        }
         [HttpPost]
         public async Task<IActionResult> SignUp(User user)
         {

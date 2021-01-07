@@ -1,8 +1,8 @@
 @model vectorBackend.Entities.User;
 @{
-    ViewData["Title"] = "User";
+    ViewData["Title"] = "Sign Up";
 }
-
+<h1>Добавление записи</h1>
 
 <form asp-action="SignUp" class="col-md-6" method="POST" >
     <div class="input-group mb-3">
@@ -28,7 +28,13 @@
             <span class="input-group-text">Email</span>
         </div>
         <input asp-for="Email" type="text" class="form-control" placeholder="example@gmail.com" aria-label="Email">
-        
+    </div>
+     <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text"> Group</span>
+        </div>
+        <input asp-for="Group" type="text" class="form-control" placeholder="Your group"
+            aria-label="group">
     </div>
     <div class="input-group mb-3">
         <div class="input-group-prepend">
